@@ -1,8 +1,3 @@
-
-USERNAME = ashiapp
-
-PASSWORD = mamank
-
 CARA INSTALL✓
 
 $ apt update && apt upgrade -y
@@ -15,13 +10,13 @@ $ pip2 install request
 
 $ pip2 install mechanize
 
-$ git clone https://github.com/unikers71/mbf
+$ git clone https://github.com/unikers71/darkfb
 
-$ cd mbf
+$ cd darkfb
 
 $ pip2 install -r requirements.txt
 
-$ python2 mbf.py
+$ python2 darkfb.py
 
 
 
