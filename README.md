@@ -6,7 +6,7 @@ $ apt install python2 -y
 
 $ apt install git -y
 
-$ pip2 install request
+$ pip2 install requests
 
 $ pip2 install mechanize
 
