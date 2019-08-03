@@ -1,5 +1,9 @@
 CARA INSTALL✓
 
+USER: dark
+
+PASS: fb
+
 $ apt update && apt upgrade -y
 
 $ apt install python2 -y
