@@ -482,9 +482,9 @@ def yahoo():
 	os.system('clear')
 	print logo
 	print "\033[1;97m╔════════════════════════════════════════"
-	print "\033[1;97m║\033[1;95m[\033[1;97m01\033[1;95m]\033[1;97m. Clone with list friend"
-	print "\033[1;97m║\033[1;95m[\033[1;97m02\033[1;95m]\033[1;97m. Clone with friend"
-	print "\033[1;97m║\033[1;95m[\033[1;97m03\033[1;95m]\033[1;97m. Clone with member group"
+	print "\033[1;97m║\033[1;95m[\033[1;97m01\033[1;95m]\033[1;97m. Clone from list friend"
+	print "\033[1;97m║\033[1;95m[\033[1;97m02\033[1;95m]\033[1;97m. Clone from friend"
+	print "\033[1;97m║\033[1;95m[\033[1;97m03\033[1;95m]\033[1;97m. Clone from member group"
 	print  "\033[1;97m║\033[1;95m[\033[1;91m00\033[1;95m]\033[1;97m. \033[1;91mBack"
 	print  "\033[1;97m║"
 	pilih()
